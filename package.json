@@ -1,0 +1,32 @@
+{
+  "name": "human-ai-therapist",
+  "version": "1.0.0",
+  "description": "Human AI Therapist desktop and mobile app",
+  "main": "electron-main.js",
+  "scripts": {
+    "desktop:start": "electron .",
+    "desktop:build": "electron-packager . \"Human AI Therapist\" --platform=win32 --arch=x64 --out=dist-desktop --overwrite --icon=icon-512.png --prune=true --ignore=\"^(dist-desktop|android|\\.git|\\.github)\"",
+    "mobile:prepare": "node build-mobile-assets.js",
+    "mobile:sync": "node build-mobile-assets.js && npx cap sync android",
+    "mobile:open": "npx cap open android"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sameer27Raza/Human-AI-Therapist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sameer27Raza/Human-AI-Therapist/issues"
+  },
+  "homepage": "https://github.com/Sameer27Raza/Human-AI-Therapist#readme",
+  "devDependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "electron": "^45.3.0",
+    "electron-packager": "^17.1.2"
+  }
+}

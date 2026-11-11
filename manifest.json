@@ -1,0 +1,33 @@
+{
+  "id": "./",
+  "name": "Human AI Therapist",
+  "short_name": "AI Therapist",
+  "description": "A research project exploring responsible, human-centered AI therapist interactions.",
+  "categories": ["health", "lifestyle"],
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#080f20",
+  "theme_color": "#080f20",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
